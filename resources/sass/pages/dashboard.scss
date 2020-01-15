@@ -1,0 +1,272 @@
+body {
+  background: #FBFBFB;
+  height: 100%;
+}
+
+input {
+  display: block;
+  width: 100%;
+  box-shadow: none;
+}
+
+label {
+  color: grey !important;
+}
+
+.bmd-form-group .form-control, .bmd-form-group label, .bmd-form-group input::placeholder {
+  box-shadow: none !important;
+  text-transform: capitalize;
+}
+
+select.form-control {
+  box-shadow: none;
+}
+.radio-content {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 15px;
+
+  .second-radio {
+    padding-left: 25px;
+  }
+}
+
+.form-check .form-check-input:checked ~ .circle {
+  border-color: $accent;
+}
+.form-check .form-check-label .circle .check {
+  background-color: $accent;
+}
+
+.form-check .form-check-input:checked + .form-check-sign .check {
+  background: $accent;
+}
+
+.form-control, .is-focused .form-control {
+  background-image: linear-gradient(to top, $accent 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, $border 1px, rgba(206, 212, 218, 0) 1px);
+}
+
+span.text {
+  text-transform: capitalize;
+}
+
+table {
+  border: 1px solid #e1e1e1;
+  @include box-shadow;
+
+  .edit-btn,
+  .delete-btn {
+    background: $accent;
+    width: 27px;
+    height: 35px;
+    padding: 2px;
+    font-size: 1rem;
+  }
+
+  th {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-right: 1px solid #e1e1e1;
+    max-width: 120px;
+    min-width: 120px;
+    position: relative;
+
+    i {
+      margin-left: 3px;
+      position: absolute;
+      right: 10px;
+      top: 18px;
+      z-index: -1;
+
+      &.fa-sort-desc {
+        top: 13px;
+      }
+      &.fa-sort {
+        top: 16px;
+      }
+    }
+
+
+    a {
+      color: #b1b1b1;
+      display: block;
+      width: 100%;
+      @include basic-transition;
+
+      &:hover,
+      &:focus {
+        color: $accent !important;
+      }
+
+    }
+  }
+
+  td {
+    max-width: 120px;
+    font-size: 13px;
+    border-right: 1px solid #e1e1e1;
+    min-width: 120px;
+    text-transform: capitalize;
+  }
+}
+
+.empty-block {
+  width: 100%;
+  padding: 60px 0;
+  border: 1px solid $border-color;
+  @include border-radius(25px);
+
+  p {
+    text-align: center;
+    color: $accent;
+    font-size: 16px;
+  }
+}
+
+.top {
+  margin-bottom: 60px;
+}
+
+.dashboard-section {
+  padding: 50px 0;
+}
+
+h2 {
+  color: $accent;
+  text-transform: capitalize;
+  font-size: 22px;
+  margin-bottom: 20px ;
+  line-height: 100px;
+  font-weight: 400;
+
+  img {
+    max-width: 100px;
+    float: right;
+    position: relative;
+    bottom: 10px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    line-height: 30px;
+    text-align: left;
+
+    img {
+      display: none;
+    }
+  }
+}
+
+p.description {
+  font-size: 15px;
+  color: $grey;
+  text-align: justify;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.collapse.navbar-collapse {
+  @include media-breakpoint-down(md) {
+    border-left: 1px solid #DDD;
+  }
+}
+
+.nav-link.logout {
+  background: $accent;
+  @include border-radius(5px);
+  color: $white !important;
+}
+
+.navbar {
+  padding: 1.05rem 0;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+img.logo {
+  max-width: 50px;
+  margin-right: 6px;
+  position: relative;
+  top: -10px;
+}
+
+span.logo-text {
+  text-transform: unset;
+  letter-spacing: 1px;
+  font-size: 22px;
+  color: $accent;
+  position: relative;
+  top: -8px;
+}
+
+a.nav-link {
+  color: #AFAFAF !important;
+  @include basic-transition;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.nav-item.active {
+  .nav-link {
+    color: $accent !important;
+  }
+}
+.modal-header {
+  h5 {
+    font-weight: 400;
+  }
+}
+.modal-body {
+  p.comment {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 20px;
+    color: $grey;
+
+    .visit-name,
+    .patient-name {
+      color: $accent;
+      font-weight: 400;
+    }
+  }
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .btn-primary {
+    background: $accent !important;
+    box-shadow: none !important;
+  }
+}
+
+.pagination > .page-item.active > a, .pagination > .page-item.active > a:focus, .pagination > .page-item.active > a:hover, .pagination > .page-item.active > span, .pagination > .page-item.active > span:focus, .pagination > .page-item.active > span:hover {
+  background: $accent;
+  border-color: $accent;
+  box-shadow: none !important;
+}
+
+ul.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.create-visit,
+.create-patient,
+.filter-visit,
+.filter-patient {
+  background: $accent !important;
+  box-shadow: none !important;
+
+  &:hover {
+    background: #919191 !important;
+  }
+}

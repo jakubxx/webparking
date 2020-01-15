@@ -1,0 +1,77 @@
+body {
+  background-color: $white;
+  font-size: $font-size-one;
+  color: $grey;
+  font-family: $font-family-one !important;
+}
+
+a {
+  outline: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  outline: none;
+}
+
+button.btn.dropdown-toggle.btn-light {
+  background: white !important;
+  color: black !important;
+  border: none;
+  outline: none !important;
+  box-shadow: none;
+  padding: 5px 10px;
+}
+.table-img {
+    width: 80px !important;
+}
+.show:not(.modal) .dropdown-toggle:after {
+  transform: rotate(360deg);
+}
+.dropdown-item.active, .dropdown-item:active {
+  background: $white;
+  color: $accent !important;
+}
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu a:hover, .dropdown-menu a:focus, .dropdown-menu a:active {
+  box-shadow: none;
+  background: $white;
+  color: $accent !important;
+}
+.dropdown.bootstrap-select {
+  box-shadow: none;
+}
+.text-primary {
+  color: $accent !important;
+}
+.toast-success,
+.toast-error {
+  background-color: $accent !important;
+
+  &:hover {
+    box-shadow: none !important;
+    opacity: 0.8;
+  }
+}
+.datepickers-container {
+  z-index:9999 !important
+}
+.datepicker--cell.-current-,
+.datepicker--day-name{
+  color: $accent !important;
+}
+label.error {
+  color: red !important;
+}
+.modal.show .modal-dialog {
+  @media only screen and (max-height: 768px) {
+    padding-bottom: 200px;
+  }
+}
+
+
+.modal-dialog .modal-content {
+  position: relative !important;
+}

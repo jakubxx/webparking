@@ -1,0 +1,36 @@
+.dashboard-section {
+
+  .card .card-header-primary {
+    box-shadow: none;
+    background: linear-gradient(60deg, #fff, #fff);
+    border: 1px solid #e1e1e1;
+
+    h4 {
+      font-family: $font-family-one;
+      font-weight: 400;
+      color: $accent !important;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .card-body {
+    padding: 50px 20px;
+    min-height: 300px;
+  }
+
+  .generate-btn {
+    background: $accent !important;
+    box-shadow: none !important;
+    margin: 40px auto 0;
+    display: block;
+
+    i {
+      margin-right: 6px;
+    }
+
+    &:hover {
+      background: #919191 !important;
+    }
+  }
+}

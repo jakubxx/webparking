@@ -1,0 +1,19 @@
+@mixin basic-transition {
+  transition: all .2s ease-in-out;;
+  -webkit-transition: all .2s ease-in-out;;
+  -moz-transition: all .2s ease-in-out;;
+  -o-transition: all .2s ease-in-out;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius !important;
+  -moz-border-radius: $radius !important;
+  -webkit-border-radius: $radius !important;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 3px 6px $border;
+  -webkit-box-shadow: 0 3px 6px $border;
+  -o-box-shadow: 0 3px 6px $border;
+  -moz-box-shadow: 0 3px 6px $border;
+}
